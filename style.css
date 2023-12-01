@@ -1,0 +1,364 @@
+/*---fonts---*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+/*---resets--- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*-----profilecard----- */
+.profilecard{
+    position: relative;
+    width: 400px;
+    height: auto;
+    border-radius: 24px ;
+    box-shadow:  0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.profilecard:hover{
+    cursor:default;
+}
+.profilecard::before{
+    position: absolute;
+    content: '';
+    background-color:  #4267b2;
+    border-top-left-radius: 24px ;
+    border-top-right-radius: 24px ;
+    
+    height: 30%;
+    width: 100%;
+}
+/*-----profilecard------*/
+
+
+/*-----profileimg------*/
+.profileimg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.profileimg .img{
+    border: 3px solid #4267b2;
+    display: flex;
+    border-radius: 50%;
+}
+.profilecard .profileimg .img img{
+    width: 140px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);  
+}
+/*------end of profileimg------*/
+
+
+/*-----profilehead------*/
+.profilehead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.profilehead .t1{
+    font-size: 28px;
+    font-weight: 600;
+}
+.profilehead .t2{
+    font-size: 18px;
+    font-weight: 300; 
+}
+/*-----end of profilehead------*/
+
+
+/*-----icons------*/
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.icons a{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-inline: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.icons i{
+   font-size: 20px;
+   color: white;
+}
+.icons .facebook {
+    background-color: #4267b2;
+}
+.icons .twitter {
+    background-color: #1da1f2;
+}
+.icons .instagram {
+    background-color: #e1306c;
+}
+.icons .youtube {
+    background-color: #ff0000;
+}
+/*-----end of icons------*/
+
+
+/*-----buttons------*/
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;  
+}
+.buttons .button{
+    background-color: #4267b2;
+    border: none;
+    border-radius: 20px;
+    width: 135px;
+    height: 40px;
+    margin-inline: 10px;
+    color: white;
+}
+.buttons .button:hover{
+    cursor: pointer;
+    background-color: #2f4a7e;
+}
+/*-----end of buttons------*/
+
+
+/*-----footer------*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;  
+}
+.footer .f1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 15px;
+    padding-inline: 30px;
+    border: none;
+}
+.footer .f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 15px;
+    padding-inline: 30px;
+    border-left: 1px solid black;
+}
+/*-----end of footer------*/
+
+
+
+/* media queries  */
+
+@media only screen and (min-width: 340px) and (max-width: 600px) {
+
+    /*-----profilecard----- */
+.profilecard{  
+    width: 300px;
+    height: auto;
+    border-radius: 22px ;
+}
+
+.profilecard::before{   
+    border-top-left-radius: 22px ;
+    border-top-right-radius: 22px ;   
+    height: 30%;  
+}
+/*-----profilecard------*/
+
+
+/*-----profileimg------*/
+.profileimg{ 
+    margin-top: 25px;
+}
+.profileimg .img{
+    border: 2px solid #4267b2;
+    border-radius: 50%;
+}
+.profilecard .profileimg .img img{
+    width: 120px;
+    border: 2px solid rgb(255, 255, 255);  
+}
+/*------end of profileimg------*/
+
+
+/*-----profilehead------*/
+.profilehead{   
+    margin-top: 15px;
+}
+.profilehead .t1{
+    font-size: 26px;
+}
+.profilehead .t2{
+    font-size: 16px; 
+}
+/*-----end of profilehead------*/
+
+
+/*-----icons------*/
+.icons{
+    margin-top: 15px;
+}
+.icons a{
+    width: 32px;
+    height: 32px;
+    margin-inline: 10px;
+}
+.icons i{
+   font-size: 18px;
+}
+/*-----end of icons------*/
+
+ 
+/*-----buttons------*/
+.buttons{
+    margin-top: 25px;  
+}
+.buttons .button{
+    font-size: 11px;
+    border-radius: 18px;
+    width: 105px;
+    height: 33px;
+    margin-inline: 8px;
+}
+/*-----end of buttons------*/
+
+
+/*-----footer------*/
+.footer{
+    margin-top: 25px;
+    margin-bottom: 25px;  
+}
+.footer .f1{
+    font-size: 13px;
+    padding-inline: 25px;
+}
+.footer .f{
+    font-size: 13px;
+    padding-inline: 25px;
+}
+/*-----end of footer------*/
+}
+
+
+@media only screen  and (min-device-width: 340px) 
+and (max-device-width: 800px) and (orientation: landscape) {
+                 
+                
+
+/*-----profilecard----- */
+.profilecard{  
+    width: 200px;
+    height: 275px ;
+    border-radius: 18px ;
+}
+
+.profilecard::before{   
+    border-top-left-radius: 18px ;
+    border-top-right-radius: 18px ;   
+    height: 23%;  
+}
+/*-----profilecard------*/
+
+
+/*-----profileimg------*/
+.profileimg{ 
+    margin-top: 15px;
+}
+.profileimg .img{
+    border: 2px solid #4267b2;
+    border-radius: 50%;
+}
+.profilecard .profileimg .img img{
+    width: 70px;
+    border: 2px solid rgb(255, 255, 255);  
+}
+/*------end of profileimg------*/
+
+
+/*-----profilehead------*/
+.profilehead{   
+    margin-top: 15px;
+}
+.profilehead .t1{
+    font-size: 20px;
+}
+.profilehead .t2{
+    font-size: 10px; 
+}
+/*-----end of profilehead------*/
+
+
+/*-----icons------*/
+.icons{
+    margin-top: 15px;
+}
+.icons a{
+    width: 20px;
+    height: 20px;
+    margin-inline: 8px;
+}
+.icons i{
+   font-size: 11px;
+}
+/*-----end of icons------*/
+
+ 
+/*-----buttons------*/
+.buttons{
+    margin-top: 15px;  
+}
+.buttons .button{
+    font-size: 7px;
+    border-radius: 12px;
+    width: 70px;
+    height: 20px;
+    margin-inline: 5px;
+}
+/*-----end of buttons------*/
+
+
+/*-----footer------*/
+.footer{
+    margin-top: 20px;
+    margin-bottom: 15px;  
+}
+.footer .f1{
+    font-size: 10px;
+    padding-inline: 15px;
+}
+.footer .f{
+    font-size: 10px;
+    padding-inline: 15px;
+}
+/*-----end of footer------*/
+}   
+
+
+/*------end os media quries------ */
+
+
+
+
